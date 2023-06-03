@@ -74,7 +74,7 @@ class Splash {
 
     async maintenanceCheck() {
         config.GetConfig().then(res => {
-            if (res.maintenance) return this.shutdown(res.maintenance_message);
+            //if (res.maintenance) return this.shutdown(res.maintenance_message);
             this.startLauncher();
         }).catch(e => {
             console.error(e);
